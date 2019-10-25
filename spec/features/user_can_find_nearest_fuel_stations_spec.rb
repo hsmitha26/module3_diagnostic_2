@@ -9,8 +9,15 @@ describe "user can find nearest fuel stations: " do
 
   it "user can see the closes electric fuel station" do
     visit '/search'
-    
+    # save_and_open_page
+    # expect(page).to have_content("Nearest Electric Fuel Staiton")
   end
 end
 
 # Then I should see the closest electric fuel station to me.
+# For that station I should see
+# - Name
+# - Address
+# - Fuel Type
+# - Distance
+# - Access Times

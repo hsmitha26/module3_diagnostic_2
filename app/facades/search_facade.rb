@@ -1,7 +1,10 @@
 class SearchFacade
+  attr_reader :stations
+
   def initialize(stations_array)
-    @station = stations_array.map do |station_hash|
+    @stations = stations_array.map do|station_hash|
       Station.new(station_hash)
     end
+    # binding.pry
   end
 end

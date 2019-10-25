@@ -1,9 +1,9 @@
 <h2>Nearest Electric Fuel Station</h2>
 
-<% @facade.nearest_station.each do |station_info| %>
-  <li><%= station_info.name %></li>
-  <li><%= station_info.address %></li>
-  <li><%= station_info.fuel_type %></li>
-  <li><%= station_info.distance %></li>
-  <li><%= station_info.access_times %></li>
+<% @facade.stations.each do |station_info| %>
+  <li>Station Name: <%= station_info.name %></li>
+  <li>Station Address: <%= station_info.address %></li>
+  <li>Fuel Type: <%= station_info.fuel_type %></li>
+  <li>Distance Current Location: <%= station_info.distance %></li>
+  <li>Hours of Operation: <%= station_info.access_times %></li>
 <% end %>

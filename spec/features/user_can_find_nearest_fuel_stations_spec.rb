@@ -7,10 +7,10 @@ describe "user can find nearest fuel stations: " do
     expect(current_path).to eq('/search')
   end
 
-  it "user can see the closes electric fuel station" do
+  it "user can see the closest electric fuel station" do
     visit '/search'
-    # save_and_open_page
-    # expect(page).to have_content("Nearest Electric Fuel Staiton")
+
+    expect(page).to have_content("Station Name: Seventeenth Street Plaza")
   end
 end
 

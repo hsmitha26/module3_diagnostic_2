@@ -5,6 +5,5 @@ class SearchFacade
     @stations = stations_array.map do|station_hash|
       Station.new(station_hash)
     end
-    # binding.pry
   end
 end

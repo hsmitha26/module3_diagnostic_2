@@ -6,9 +6,7 @@ class SearchController < ApplicationController
       faraday.params[:radius] = 1.0
       faraday.params[:limit] = 2
     end
-    binding.pry
     all_stations = JSON.parse(response.body, symbolize_names: true)
-    binding.pry
-    @facade = SearchFacade.new(all_stations)
+    @facade = SearchFacade.new(all_stations[:fuel_stations])
   end
 end
